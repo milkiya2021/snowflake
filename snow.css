@@ -1,0 +1,49 @@
+
+*{
+    box-sizing : border-box;
+  }
+  
+  body{
+    background: #333975;
+    color : white;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items : center;
+    height : 100vh;
+    margin : 0 ;
+    text-align : center;
+    
+  }
+  
+  .fa-snowflake{
+    animation : fall linear forwards;
+    color: #fff;
+    position : absolute;
+    top:-20px;
+  }
+  
+  @keyframes fall{
+    to{
+      transform: translateY(105vh);
+    }
+  }
+  
+  .countdown-container{
+    display : flex;
+  }
+  
+  .time {
+      display: flex;
+      font-size: 1.2em;
+      flex-direction: column;
+      margin: 0 15px;
+  }
+  
+  .time h1 {
+      margin-bottom: 0;
+  }
+  
+  .time small {
+      color: #ccc;
+  }
